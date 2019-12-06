@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="center ">Listing All <%= @articles.count %> Articles</h1>
-
+<h1 class="center">Listing All Articles</h1>
+<div class="center">
+  <%= will_paginate %>
+</div>
 <%= render 'article', obj: @articles %>
+<div class="center"><%= will_paginate %></div>
