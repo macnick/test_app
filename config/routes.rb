@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   get 'about', to: 'welcome#about'
   
   get 'signup', to: 'users#new'
-  post 'users', to: 'users#create'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+  # get something and take it to:  a controller and an action
   resources :users, except: [:new]
   
 end
