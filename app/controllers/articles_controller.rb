@@ -1,5 +1,8 @@
 class ArticlesController < ApplicationController
+  # always have the before actions in the order you want them to execute
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :require_user, except: [:show, :index]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
 
   # GET /articles
   # GET /articles.json
@@ -66,5 +69,12 @@ class ArticlesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
       params.require(:article).permit(:title, :description)
+    end
+
+    def require_same_user
+      if current_user != @article.user
+        flash[:danger] = "You can edit or delete your own articles"
+        redirect_to root_path
+      end
     end
 end
