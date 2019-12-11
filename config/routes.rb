@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   # get something and take it to:  a controller and an action
   resources :users, except: [:new]
-  
+  resources :categories, except: [:destroy]
 end
