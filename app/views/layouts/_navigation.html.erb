@@ -38,7 +38,7 @@
               <li><%= link_to "#{cat.name}", category_path(cat) %></li>
               <% end %>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><%= link_to "Create new Category", new_category_path %></li>
             </ul>
           </li>
       </ul>
