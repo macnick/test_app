@@ -1,24 +1,46 @@
-# README
+# Alpha Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Light Blog like Application allows users to sign up and create articles. Each user can delete/edit his/her own articles. Admin can create/delete categories and articles and can delete users.
 
-Things you may want to cover:
+Built with the help of ["The Complete Ruby on Rails Developer Course"](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
 
-* Ruby version
+### Requirements
+```
+- A Cloud Server running Linux (Ubuntu 18.04) or (Mac OS)
+- PostgreSQL installed and running.
+- Ruby on Rails installed and running.
+- A basic familiarity with Ruby on Rails
 
-* System dependencies
+```
 
-* Configuration
+### Install
 
-* Database creation
+```
+gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'pg', '>= 0.18', '< 2.0'
+gem 'rails', '~> 5.2.3'
+gem 'faker', '~> 1.6', '>= 1.6.6'
+```
 
-* Database initialization
+👤 **Author1**
 
-* How to run the test suite
+- Github: [@macnick](https://github.com/macnick)
+- Twitter: [@mac_experts](https://twitter.com/mac_experts)
+- Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos-26a55412a/)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/macnick/test_app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MiT](LICENSE) licensed.
+
