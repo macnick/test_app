@@ -111,9 +111,14 @@ GEM
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (1.2.3)
+<<<<<<< HEAD
     public_suffix (4.0.6)
     puma (3.12.6)
     racc (1.5.2)
+=======
+    public_suffix (4.0.3)
+    puma (3.12.6)
+>>>>>>> 54d96b554f59852d57b412c4ec503b3b7e10bf31
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
